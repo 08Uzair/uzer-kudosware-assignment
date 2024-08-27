@@ -1,70 +1,105 @@
-# Getting Started with Create React App
+# YourHR - Job Search Service
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![1](https://github.com/user-attachments/assets/a144e805-2e8a-421b-b5f2-bc12bf617fee)
 
-## Available Scripts
+![2](https://github.com/user-attachments/assets/ea0c9796-b98c-4487-8e19-a4118b84c99b)
 
-In the project directory, you can run:
 
-### `npm start`
+## Project Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+YourHR is a job search platform designed to help job seekers find ideal job roles based on their qualifications and preferences. This project involves the development of a web application where users can sign up, submit personal information, and upload their resumes. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The application has a backend to securely store user data and resumes in a database and provides a basic, responsive user interface.
 
-### `npm test`
+# Submission
+- Live Website: https://uzerqureshi-kudosware-assignment.netlify.app
+- Source Code: https://github.com/08Uzair/uzer-kudosware-assignment
+- Database Link : https://kudosware-server.onrender.com 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
 
-### `npm run build`
+- **User Signup**: Job seekers can sign up and provide their personal information.
+- **Resume Upload**: Users can upload their resumes in various formats.
+- **Data Security**: User data and resumes are securely stored in the backend.
+- **Responsive Design**: The website is designed to work well on both desktop and mobile devices.
+  
+## Pages
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **SignIn & SignUp Page**
+2. **Resume Upload Page**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Technologies Used
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Frontend:
+- **React.js**: For building the user interface.
+- **Tailwind CSS**: For styling the components and ensuring responsiveness.
 
-### `npm run eject`
+### Backend:
+- **Node.js** (Express): For building the backend API.
+- **Postgres**: For storing user data 
+- **Supabase Bucket** : For storing Resume Files
+### Hosting:
+- **Netlify**: For deploying the frontend.
+- **Render**: For deploying the backend 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Getting Started
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Prerequisites
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Node.js** 
+- **npm** 
+- **Postgres** database 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Installation
 
-## Learn More
+1. Clone the repository :
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```bash
+   git clone https://github.com/08Uzair/uzer-kudosware-assignment.git
+   cd yourhr
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. Install dependencies for both frontend and backend :
+ 
+- Frontend
+  
+   ```bash
+   cd frontend
+   npm install
 
-### Code Splitting
+ - Backend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   ```bash
+   cd backend
+   npm install
 
-### Analyzing the Bundle Size
+ 3. Set up your environment variables for the backend:
+ - Create a .env file in the backend directory with the following content:
+  ```bash
+   DB_HOST=your-database-host
+   DB_USER=your-database-username
+   DB_PASSWORD=your-database-password
+   DB_NAME=your-database-name
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+ 4.Start the development servers:
 
-### Making a Progressive Web App
+ - Frontend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+   ```bash
+   cd frontend
+   npm start
+   ```
+- Backend
 
-### Advanced Configuration
+ ```bash
+cd backend
+npm start
+  ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+# API Endpoints
 
-### Deployment
+- `POST` `/api/v1/signup`  : Handles user signup and then signin account .
+-  `POST` `/api/v1/signin`  : Handles user signin and resume upload.
+-  `GET` `/api/v1/users`  : Fetches the list of registered users.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
