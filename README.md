@@ -102,4 +102,8 @@ npm start
 -  `POST` `/api/v1/signin`  : Handles user signin and resume upload.
 -  `GET` `/api/v1/users`  : Fetches the list of registered users.
 
+# ARCHITECTURE DIAGRAM
+
+![Diagram](https://github.com/user-attachments/assets/6f4aa110-f9bf-4ab5-af3f-ab213735ba9b)
+
 
