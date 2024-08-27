@@ -1,4 +1,4 @@
-# YourHR - Job Search Service
+# [YourHR - Job Search Service](https://uzerqureshi-kudosware-assignment.netlify.app)
 
 ![1](https://github.com/user-attachments/assets/a144e805-2e8a-421b-b5f2-bc12bf617fee)
 
